@@ -35,6 +35,7 @@ MyTelegramBot.sendSticker(1234, 'sticker/path', { reply_to_message_id: 5678 });
 MyTelegramBot.sendVideo(1234, 'video/path', { caption: 'Foo' });
 MyTelegramBot.sendVideoNote(1234, 'video/path', { disable_notification: true });
 MyTelegramBot.sendVoice(1234, 'voice/path', { caption: 'Foo' });
+MyTelegramBot.sendMediaGroup(1234, [{ type: 'photo', media: 'photo/path' }, { type: 'video', media: 'voice/path', caption: 'Foo' }]);
 MyTelegramBot.sendChatAction(1234, 'typing');
 MyTelegramBot.kickChatMember(1234, 'myUserID');
 MyTelegramBot.unbanChatMember(1234, 'myUserID');
